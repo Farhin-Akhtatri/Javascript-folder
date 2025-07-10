@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe game</title>
+    <style>
+        body{
+            background-color: #61a6a7;
+            text-align: center;
+        }
+        
+        .grid{
+           padding-top: 2rem; 
+           
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .col{
+            height: 70px;
+            width: 70px;
+            border: 1px solid black;
+            border-radius: 1rem;
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+            background-color: rgb(211, 216, 152);
+            font-size: 45px;
+             color: #691310;
+             text-align: center;
+            
+        }
+        .row{
+            display: flex;
+            
+        }
+        #game-button{
+            padding: 1rem;
+            margin-top: 3rem;
+            background-color: #191919;
+            color: azure;
+            border-radius: 0.7rem;
+            border: none;
+            
+        }
+        #Newgame-button{
+            padding: 1rem;
+            background-color: #191919;
+            color: azure;
+            border-radius: 0.7rem;
+            border: none;   
+        }
+        #message{
+            font-size: 2.5rem;
+            color: rgb(221, 236, 137);
+        }
+        .msg-container{
+            height: 120vmin;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .hide{
+             display: none; 
+        }
+    </style>
+</head>
+<body>
+    <div class="msg-container hide">
+        <p id="message">Winner</p>
+        <button id="Newgame-button">New Game</button>
+    </div>
+
+     <main> <h1>Tic Tac Toe</h1>
+    <div class="container">
+        <div class="grid">
+            <div class="row">
+                <button id="0" class="col"></button>
+                <button id="1" class="col"></button>
+                <button id="2" class="col"></button>
+            </div>
+
+            <div class="row">
+                  <button id="3" class="col"></button>
+                  <button id="4" class="col"></button>
+                  <button id="5" class="col"></button>
+            </div>
+
+            <div class="row">
+                <button id="6" class="col"></button>
+                <button id="7" class="col"></button>
+                <button id="8" class="col"></button>
+            </div>
+        </div>
+    </div>
+    <button id="game-button">Reset Game</button>
+    </main>
+    <script src="Tic Tac Toe game.js"></script>
+</body>
+</htm

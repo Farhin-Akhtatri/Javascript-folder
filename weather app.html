@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+   <style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10rem;
+        gap: 2.5rem;
+    }
+     .main-btn{
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 0.5rem;
+    }
+    
+    #search-button{
+        width: 4rem;
+        background-color: rgb(204, 197, 197);
+        border-radius: 0.2rem;
+        border: rgb(170, 134, 134);
+        color: rgb(65, 61, 61);
+    }
+    
+    #city-name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        color: rgb(6, 130, 134);
+    }
+    #city-time{
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(62, 132, 62);
+    }
+    #city-temp{
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(75, 114, 186);
+    }
+   </style>
+</head>
+<body>
+    <div class="main-btn">
+        <input type="text" placeholder="Enter City Name" id="city input">
+        <button id="search-button">Search</button>
+    </div>
+
+    <div>
+        <h3 id="city-name">Canada, Ontario - Toranto</h3>
+        <h6 id="city-time">localtime</h6>
+        <p id="city-temp">13</p>
+    </div>
+    
+    <script src="weather app.js"></script>
+</body>
+</html>
