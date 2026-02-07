@@ -104,3 +104,5 @@
 // for(let val of fullname){
 //     console.log(val);
 // }
+
+console.log("Farhin")
